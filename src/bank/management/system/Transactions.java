@@ -21,56 +21,56 @@ public class Transactions extends JFrame implements ActionListener {
            image.setBounds(0, 0, 900, 900);
            add(image);
            
-           JLabel textTrans = new JLabel("Please select your Transaction");
-           textTrans.setBounds(210, 300, 700, 35);
+           JLabel textTrans = new JLabel("PLEASE SELECT YOUR TRANSACTION IN $");
+           textTrans.setBounds(180,300,700,30);
            textTrans.setForeground(Color.WHITE);
-           textTrans.setFont(new Font("System", Font.BOLD, 16));
+           textTrans.setFont(new Font("System", Font.BOLD, 15));
            image.add(textTrans);
            
            deposit = new JButton("Deposit");
-           deposit.setBounds(170, 415, 150 , 30);
+           deposit.setBounds(170,415,150,30);
            deposit.setForeground(Color.WHITE);
            deposit.setBackground((new Color(65, 125, 128)));
            deposit.addActionListener(this);
            image.add(deposit);
            
            withdraw = new JButton("Cash Withdraw");
-           withdraw.setBounds(355, 415, 150 , 30);
+           withdraw.setBounds(355,415,150,30);
            withdraw.setForeground(Color.WHITE);
            withdraw.setBackground((new Color(65, 125, 128)));
            withdraw.addActionListener(this);
            image.add(withdraw);
            
            fastCash = new JButton("Fast Cash");
-           fastCash.setBounds(170, 450, 150 , 30);
+           fastCash.setBounds(170,450,150,30);
            fastCash.setForeground(Color.WHITE);
            fastCash.setBackground((new Color(65, 125, 128)));
            fastCash.addActionListener(this);
            image.add(fastCash);
            
            miniStatement = new JButton("Mini Statement");
-           miniStatement.setBounds(355, 450, 150 , 30);
+           miniStatement.setBounds(355,450,150,30);
            miniStatement.setForeground(Color.WHITE);
            miniStatement.setBackground((new Color(65, 125, 128)));
            miniStatement.addActionListener(this);
            image.add(miniStatement);
            
            changePin = new JButton("Pin change");
-           changePin.setBounds(170, 485, 150 , 30);
+           changePin.setBounds(170,485,150,30);
            changePin.setForeground(Color.WHITE);
            changePin.setBackground((new Color(65, 125, 128)));
            changePin.addActionListener(this);
            image.add(changePin);
         
            balanceEnquiry = new JButton("Balance Enquiry");
-           balanceEnquiry.setBounds(355, 485, 150 , 30);
+           balanceEnquiry.setBounds(355,485,150,30);
            balanceEnquiry.setForeground(Color.WHITE);
            balanceEnquiry.setBackground((new Color(65, 125, 128)));
            balanceEnquiry.addActionListener(this);
            image.add(balanceEnquiry);
            
            exit = new JButton("Exit");
-           exit.setBounds(355, 520, 150 , 30);
+           exit.setBounds(355,520,150,30);
            exit.setForeground(Color.WHITE);
            exit.setBackground((new Color(65, 125, 128)));
            exit.addActionListener(this);

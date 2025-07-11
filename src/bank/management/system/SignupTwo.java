@@ -46,65 +46,65 @@ public class SignupTwo extends JFrame implements ActionListener {
                                "Central American Federation","Chad","Chile","China","Colombia","Comoros","Congo Free State","Costa Rica","Cote d’Ivoire (Ivory Coast)",
                                "Croatia","Cuba","Cyprus","Czechia","Czechoslovakia","D","Democratic Republic of the Congo","Denmark","Djibouti",
                                "Dominica","Dominican Republic","Duchy of Parma","E","East Germany (German Democratic Republic)","Ecuador","Egypt","El Salvador",
-                               "Equatorial Guinea","Eritrea","Estonia","Eswatini","Ethiopia","Federal Government of Germany","F","Fiji","Finland","France","G","Gabon","Gambia",
-                               "Georgia","Germany","Ghana","Grand Duchy of Tuscany","Greece","Grenada","Guatemala","Guinea","Guinea-Bissau","Guyana","H","Haiti","Hanover",
-                               "Hanseatic Republics","Hawaii","Hesse","Holy See","Honduras","Hungary","Iceland","I","India","Indonesia","Iran","Iraq","Ireland",
-                               "Israel","Italy","Jamaica","J","Japan","Jordan","K","Kazakhstan","Kenya","Kingdom of Serbia/Yugoslavia","Kiribati","Korea","Kosovo",
-                               "Kuwait","Kyrgyzstan","L","Laos","Latvia","Lebanon","Lesotho","Lew Chew","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","M",
-                               "Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mecklenburg-Schwerin",
-                               "Mecklenburg-Strelitz","Mexico","Micronesia","Moldova","Monaco", "Mongolia","Montenegro","Morocco","Mozambique","N","Namibia",
-                               "Nassau","Nauru","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","North German Confederation","North German Union",
-                               "North Macedonia","Norway","O","Oldenburg","Oman","Orange Free State","P","Pakistan","Palau","Panama","Papal States","Papua New Guinea",
-                               "Paraguay","Peru","Philippines","Piedmont-Sardinia","Poland","Portugal","Q","Qatar","R","Republic of Genoa","Republic of Korea (South Korea)",
-                               "Republic of the Congo","Romania","Russia","Rwanda","S","Saint Kitts and Nevis","Saint Lucia","Saint Vincent and the Grenadines",
-                               "Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Schaumburg-Lippe","Senegal","Serbia","Seychelles","Sierra Leone",
-                               "Singapore","Slovakia","Slovenia","Solomon Islands, The Somalia","South Africa","South Sudan","Spain","Sri Lanka","Sudan","Suriname",
-                               "Sweden","Switzerland","Syria","T","Tajikistan","Tanzania","Thailand","Timor-Leste","Togo","Tonga","Trinidad and Tobago","Tunisia",
-                               "Turkey","Turkmenistan","Tuvalu","Two Sicilies*","U","Uganda","Ukraine","Union of Soviet Socialist Republics*","United Arab Emirates", 
-                               "United Kingdom","Uruguay","Uzbekistan","V","Vanuatu","Venezuela","Vietnam","W","Württemberg*","Y","Yemen","Zambia","Zimbabwe"
-                                 };
-         
-         selectCountry = new JComboBox(allCountry);
-         selectCountry.setFont(new Font("Raleway", Font.BOLD, 14));
-         selectCountry.setBounds(300, 140, 400, 30);
-         add(selectCountry);
-         
-         // License
-         JLabel dvl = new JLabel("Driver License:");
-         dvl.setFont(new Font("Raleway", Font.BOLD, 20));
-         dvl.setBounds(100, 190, 200, 30);
-         add(dvl);
-         
-         licenseTextField = new JTextField();
-         licenseTextField .setFont(new Font("Raleway", Font.BOLD, 14));
-         licenseTextField .setBounds(300, 190, 400, 30);
-         add(licenseTextField);
-         
-         // second name
-//         JLabel lname = new JLabel("Category:");
-//         lname.setFont(new Font("Raleway", Font.BOLD, 20));
-//         lname.setBounds(100, 190, 200, 30);
-//         add(lname);
-//         
-//         lnameTextField = new JTextField();
-//         lnameTextField.setFont(new Font("Raleway", Font.BOLD, 14));
-//         lnameTextField.setBounds(300, 190, 400, 30);
-//         add(lnameTextField);
-         
-         // Income
-         JLabel income = new JLabel("Income:");
-         income.setFont(new Font("Raleway", Font.BOLD, 20));
-         income.setBounds(100, 240, 200, 30);
-         add(income);
-        
-         String incomeCat[] = {"Null", " < $10,000", "$10,000 - $50,000", "$50,000-$100,000", " > 100,000"};
-         yourIncome = new JComboBox(incomeCat);
-         yourIncome.setBounds(300, 240,400, 30);
-         yourIncome.setForeground(new  Color(105, 105, 105));
-         add(yourIncome);
-         
-         //Education
-         JLabel edu = new JLabel("Education");
+                                "Equatorial Guinea","Eritrea","Estonia","Eswatini","Ethiopia","Federal Government of Germany","F","Fiji","Finland","France","G","Gabon","Gambia",
+                                "Georgia","Germany","Ghana","Grand Duchy of Tuscany","Greece","Grenada","Guatemala","Guinea","Guinea-Bissau","Guyana","H","Haiti","Hanover",
+                                "Hanseatic Republics","Hawaii","Hesse","Holy See","Honduras","Hungary","Iceland","I","India","Indonesia","Iran","Iraq","Ireland",
+                                "Israel","Italy","Jamaica","J","Japan","Jordan","K","Kazakhstan","Kenya","Kingdom of Serbia/Yugoslavia","Kiribati","Korea","Kosovo",
+                                "Kuwait","Kyrgyzstan","L","Laos","Latvia","Lebanon","Lesotho","Lew Chew","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","M",
+                                "Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mecklenburg-Schwerin",
+                                "Mecklenburg-Strelitz","Mexico","Micronesia","Moldova","Monaco", "Mongolia","Montenegro","Morocco","Mozambique","N","Namibia",
+                                "Nassau","Nauru","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","North German Confederation","North German Union",
+                                "North Macedonia","Norway","O","Oldenburg","Oman","Orange Free State","P","Pakistan","Palau","Panama","Papal States","Papua New Guinea",
+                                "Paraguay","Peru","Philippines","Piedmont-Sardinia","Poland","Portugal","Q","Qatar","R","Republic of Genoa","Republic of Korea (South Korea)",
+                                "Republic of the Congo","Romania","Russia","Rwanda","S","Saint Kitts and Nevis","Saint Lucia","Saint Vincent and the Grenadines",
+                                "Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Schaumburg-Lippe","Senegal","Serbia","Seychelles","Sierra Leone",
+                                "Singapore","Slovakia","Slovenia","Solomon Islands, The Somalia","South Africa","South Sudan","Spain","Sri Lanka","Sudan","Suriname",
+                                "Sweden","Switzerland","Syria","T","Tajikistan","Tanzania","Thailand","Timor-Leste","Togo","Tonga","Trinidad and Tobago","Tunisia",
+                                "Turkey","Turkmenistan","Tuvalu","Two Sicilies*","U","Uganda","Ukraine","Union of Soviet Socialist Republics*","United Arab Emirates", 
+                                "United Kingdom", "United States of America","Uruguay","Uzbekistan","V","Vanuatu","Venezuela","Vietnam","W","Württemberg*","Y","Yemen","Zambia","Zimbabwe"
+                                  };
+
+          selectCountry = new JComboBox(allCountry);
+          selectCountry.setFont(new Font("Raleway", Font.BOLD, 14        ));
+          selectCountry.setBounds(300, 140, 400, 30);
+          add(selectCountry);
+
+          // License
+          JLabel dvl = new JLabel("Driver License:");
+          dvl.setFont(new Font("Raleway", Font.BOLD, 20));
+          dvl.setBounds(100, 190, 200, 30);
+          add(dvl);
+
+          licenseTextField = new JTextField();
+          licenseTextField .setFont(new Font("Raleway", Font.BOLD, 14));
+          licenseTextField .setBounds(300, 190, 400, 30);
+          add(licenseTextField);
+
+          // second name
+ //         JLabel lname = new JLabel("Category:");
+ //         lname.setFont(new Font("Raleway", Font.BOLD, 20));
+ //         lname.setBounds(100, 190, 200, 30);
+ //         add(lname);
+ //         
+ //         lnameTextField = new JTextField();
+ //         lnameTextField.setFont(new Font("Raleway", Font.BOLD, 14));
+ //         lnameTextField.setBounds(300, 190, 400, 30);
+ //         add(lnameTextField);
+
+          // Income
+          JLabel income = new JLabel("Income:");
+          income.setFont(new Font("Raleway", Font.BOLD, 20));
+          income.setBounds(100, 240, 200, 30);
+          add(income);
+
+          String incomeCat[] = {"Null", " < $10,000", "$10,000 - $50,000", "$50,000-$100,000", " > 100,000"};
+          yourIncome = new JComboBox(incomeCat);
+          yourIncome.setBounds(300, 240,400, 30);
+          yourIncome.setForeground(new  Color(105, 105, 105));
+          add(yourIncome);
+
+          //Education
+          JLabel edu = new JLabel("Education");
          edu.setFont(new Font("Raleway", Font.BOLD, 20));
          edu.setBounds(100, 290, 200, 30);
          add(edu);

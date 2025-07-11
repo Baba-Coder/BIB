@@ -25,7 +25,7 @@ public class Deposit extends JFrame  implements ActionListener {
         image.setBounds(0,0, 900, 900);
         add(image);
         
-        JLabel textDeposit = new JLabel("Enter the amount you want to deposit");
+        JLabel textDeposit = new JLabel("ENTER THE AMOUNT YOU WANT TO DEPOSIT IN $");
         textDeposit.setForeground(Color.white);
         textDeposit.setFont(new Font("System", Font.BOLD, 16));
         textDeposit.setBounds(170, 300, 400, 20);
